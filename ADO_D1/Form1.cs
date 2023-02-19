@@ -21,7 +21,7 @@ namespace ADO_D1
             DisplayEditDelete(false);
             FillStudentData();
             dgv_students.Columns[2].Visible= false;
-            #region Department
+            //connection            #region Department
             // connection -> ready
             // Command
             SqlCommand command1 = new SqlCommand("select Dept_Id,Dept_Name from Department", connection);
