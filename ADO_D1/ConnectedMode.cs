@@ -6,10 +6,10 @@ using System.Windows.Forms;
 
 namespace ADO_D1
 {
-    public partial class Form1 : Form
+    public partial class ConnectedMode : Form
     {
         private SqlConnection connection;
-        public Form1()
+        public ConnectedMode()
         {
             InitializeComponent();
             //connection = new SqlConnection("Data Source=.;Initial Catalog=ITI;Integrated Security=True");
@@ -20,6 +20,8 @@ namespace ADO_D1
         {
             DisplayEditDelete(false);
             FillStudentData();
+
+            #region department
             dgv_students.Columns[2].Visible= false;
             //connection            #region Department
             // connection -> ready
@@ -136,6 +138,7 @@ namespace ADO_D1
         }
         private void btn_Add_Click(object sender, EventArgs e)
         {
+
             if (txt_lname.Text == "" || txt_fname.Text == "" || (txt_address.Text == string.Empty) || nud_age.Value == 0)
             {
                 MessageBox.Show("Fill all Data");

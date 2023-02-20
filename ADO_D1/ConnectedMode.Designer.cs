@@ -1,6 +1,6 @@
 ﻿namespace ADO_D1
 {
-    partial class Form1
+    partial class ConnectedMode
     {
         /// <summary>
         /// Required designer variable.
